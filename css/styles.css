@@ -10,7 +10,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    background-color: #9a9696;
+    background-color: #f4f4f4;
     color: #222;
 }
 /* container */ /* Set width, max-width, and center the container */
@@ -38,15 +38,15 @@ nav ul{ /* Remove list style and center the navigation items */
     list-style:none;
     text-align: center;
 }
-nav ui li { /* Set display property for navigation list items */
+nav ul li { /* Set display property for navigation list items */
     display: inline-block;
 }
-nav ui li a{ /* Set text color, remove underline, and set font weight for navigation links */
+nav ul li a{ /* Set text color, remove underline, and set font weight for navigation links */
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
-nav ui li a:hover{ /* Set hover effect for navigation links */
+nav ul li a:hover{ /* Set hover effect for navigation links */
     color: #bde0fe;
 }
 /* main */ /* Set padding for the main content area */
@@ -54,7 +54,7 @@ main{
     padding: 30px 0;
 }
 section {
-    background: 10px;
+    background: white;
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 8px;
