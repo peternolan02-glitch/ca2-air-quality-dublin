@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Tag for page responses on mobile  -->
   <title>Air Quality in Dublin | Data</title> <!-- Show in browser tab -->
   <link rel="stylesheet" href="css/styles.css"> <!-- link to style sheet -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
 </head> <!--  End header -->
 <body>
   <!-- Peter Nolan 24338893 -->
 
   <header>
-    <h1>Data on of Air Pollution</h1> <!-- main heading -->
+    <h1>Data on Air Pollution</h1> <!-- main heading -->
     <nav> <!-- opens page nav section -->
       <ul> <!-- renders as unordered list (no nums) -->
         <li><a href="index.html">Home</a></li> <!-- list item for page names -->
@@ -24,14 +25,38 @@
   </header>
 
   <main> <!-- open main -->
-    <p>content for this page.</p> <!-- paragraph 1 abstract (holder for now) --> 
+    <h1>What is air quality and how is it measured (PM2.5, PM10, NO2, NOx)</h1>
+    <p>Air quality measures how clean or polluted the air is around us, evaluated using key indicators including PM2.5, PM10, and NO2.</p>
+ 
+    <h2>Particulate matter (PM10 and PM2.5)</h2>
+
+    <p>PM are particles in the air typically measured as PM10 and PM2.5 with diameters of 10μm (microns) or 2.5μm. In Ireland, the main sources are solid fuel burning and vehicular traffic. Other sources are soil and road surfaces, construction works and industrial emissions or natural sources such as windblown salt, plant spores and pollens. These direct emissions are known as primary PM. Particulate matter can be formed from reactions between different pollutant gases (secondary sources).
+
+    Small particles can penetrate the lungs and cause damage. There are high levels of PM10 in many cities and towns.</p> <!-- https://www.epa.ie/environment-and-you/air/air-pollutants/ -->
+
+    <h2>Nitrogen dioxide (NO2) and Nitrogen oxides (NOx)</h2>
+
+    <p>Emissions from traffic are the main source of nitrogen oxides in Ireland along with electricity generating stations and industry. Nitrogen dioxide can affect the throat and lung. The main effects are emphysema and cellular damage.
+
+    It impacts visually as it has a brown colour and gives rise to a brown haze. Oxides of nitrogen contribute to the formation of acid rain and of ozone.
+
+    Levels in Ireland are moderate but are increasing due to growth in traffic numbers.</p> <!-- https://www.epa.ie/environment-and-you/air/air-pollutants/ -->
   </main>
+
+  
+  <figure>
+    <canvas id="myChart" style="width:100%;max-width:700px;"></canvas>
+    <figcaption>Source: EPA AirQuality.ie, Dublin Port, Dublin 1</figcaption>
+  </figure>
+
+  <script src="js/chart.js"></script>
 
   <footer> <!-- Open footer -->
     <p>&copy; 2026 Air Quality in Dublin Project</p> <!-- Small footer section -->
   </footer>
 
   <script src="js/script.js"></script> <!-- Connects shared java (leave at bottom so page runs first !) -->
+
 </body> <!-- close  -->
 </html> <!-- CLose -->
 
