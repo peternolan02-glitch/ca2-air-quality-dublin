@@ -53,15 +53,29 @@ nav ul li a:hover{ /* Set hover effect for navigation links */
 main{
     padding: 30px 0;
 }
-section {
+
+section { /* Set background color, margin, padding, and border radius for sections */
     background: white;
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 8px;
 }
+section h2 {
+    margin-bottom: 10px;
+}
 section p {
     margin-bottom: 10px;
 }
+
+section ul {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+section ul li {
+    margin-bottom: 8px;
+}
+
 /* images */ /* Set maximum width, height, display, and margin for images */
 img {
     max-width: 100%;
