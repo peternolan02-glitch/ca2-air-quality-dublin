@@ -21,26 +21,7 @@ body {
     margin: auto;
 
 }
-/* global image styler */
-.container img {
-    float: left;
-    width: 300px;
-    max-width: 100%;
-    margin: 0 1.5rem 1rem 0;
-    border-radius: 4px;
-}
-/* add image wrapper so they dont overlap*/
-img-wrap {
-    overflow: auto;
-    margin-bottom: 1rem;
-}
-@media (max-width: 600px) { /* Responsive design for smaller screens for global imaage styling */
-    .container img {
-        float: none;
-        width: 100%;
-        margin: 1rem auto;
-    }
-}
+
 /* Header */ /* Set background color, text color, and padding for the header */
 header {
     background-color: #1e3a5f;
@@ -109,6 +90,63 @@ section ul li {
     header h1 {
         font-size: 1.5rem;
     }
+}
+
+/* Peter Nolan - Homepage explore cards, grid layout */
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+.card {
+    background-color: #6ca4e5;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+}
+@media (max-width:600px){
+    .card-grad {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Peter Nolan - Flex rows: images and text side by side, Alternating direcitons */
+.cause-row {
+    display:flex;
+    align-items: center;
+    gap: 1.5rem ;
+    margin-bottom: 1rem ;
+}
+.cause-row img {
+    width: 40%;
+    max-width: 350px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+.cause-row p{
+    flex: 1;
+}
+.cause-row.reverse{
+    flex-direction: row reverse;
+}
+.sub-heading{
+    text-align: center;
+    background-color:#558197;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0 1.5rem 0;
+    border-radius: 2px;
+}
+@media (max-width: 600px) {
+  .cause-row,
+  .cause-row.reverse {
+    flex-direction: column;
+  }
+  .cause-row img {
+    width: 100%;
+  }
 }
 
 
