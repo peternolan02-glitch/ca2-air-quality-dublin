@@ -1,29 +1,40 @@
-
-/* RESET FOR PAGE */ /* Reset default browser styles */
+/* ============================= */
+/* RESET FOR PAGE */
+/* ============================= */
 *
-{ 
+{ /* Reset margin, padding, and box-sizing for all elements */
     margin: 0;  
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Main body */ /* Set font, line height, background color, and text color for the body */
-body {
+
+/* ============================= */
+/* Body */  
+/* ============================= */
+body {/* Set font family, line height, background color, and text color for the body */
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     background-color: white;
     color: #222;
 }
-/* container */ /* Set width, max-width, and center the container */
-.container {
+
+
+/* ============================= */
+/* Container */  
+/* ============================= */
+.container {/* Set width, maximum width, and center alignment for the container */
     width: 90%;
     max-width: 1110px;
     margin: auto;
 
 }
 
-/* Header */ /* Set background color, text color, and padding for the header */
-header {
+
+/* ============================= */
+/*header*/
+/* ============================= */
+header {/* Set background color, text color, and padding for the header */
     background-color: #1e3a5f;
     color: white;
     padding: 20px 0;
@@ -32,6 +43,11 @@ header {
 header h1 { /* Set font size and text alignment for the header title */
     text-align: center;
 }
+
+
+/* ============================= */
+/* Navigation */  
+/* ============================= */
 nav { /* Set background color and padding for the navigation bar */
     background-color: #16304d;
     padding: 10px 0; 
@@ -51,54 +67,50 @@ nav ul li a{ /* Set text color, remove underline, and set font weight for naviga
 nav ul li a:hover{ /* Set hover effect for navigation links */
     color: #bde0fe;
 }
-/* main */ /* Set padding for the main content area */
-main{
+
+
+/* ============================= */
+/* Main Content + Sections */
+/* ============================= */
+main{/* Set padding for the main content area */
     padding: 30px 0;
 }
-
 section { /* Set background color, margin, padding, and border radius for sections */
     background: white;
     margin-bottom: 20px;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 1px 24px rgba(0, 0, 0, 0.1);
 }
-section h1 {
+section h1 { /* Set margin for section titles */
     margin-bottom: 15px;
 }
-section h2 {
+section h2 {/* Set margin for section subtitles */
     margin-bottom: 10px;
     margin-top: 20px;
 }
-section p {
+section p {/* Set margin and maximum width for section paragraphs */
     margin-bottom: 10px;
     max-width: 75ch;
 }
-section ul {
+section ul {/* Set margin for unordered lists in sections */
     margin-left: 20px;
     margin-bottom: 10px;
 }
-section ul li {
+section ul li {/* Set margin for list items in unordered lists */
     margin-bottom: 5px;
 }
 
-@media (max-width: 600px) { /* Responsive design for smaller screens */
-    nav ul li {
-        display: block;
-        margin-bottom: 8px 0;
-    }
-    header h1 {
-        font-size: 1.5rem;
-    }
-}
 
-/* Peter Nolan - Homepage explore cards, grid layout */
-.card-grid{
+/* ============================= */
+/*Peter Nolan - Homepage explore cards - grid layout for cards */
+/* ============================= */
+.card-grid{/* Set display, grid template columns, and gap for the card grid */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
 }
-.card {
+.card {/* Set background color, padding, text alignment, border radius, text decoration, color, and font weight for individual cards */
     background-color: #6ca4e5;
     padding: 1.5rem;
     text-align: center;
@@ -107,50 +119,39 @@ section ul li {
     color: #222;
     font-weight: bold;
 }
-@media (max-width:600px){
-    .card-grad {
-        grid-template-columns: 1fr;
-    }
-}
 
-/* Peter Nolan - Flex rows: images and text side by side, Alternating direcitons */
-.cause-row {
+/* ============================= */
+/*Peter Nolan - Flex rows: images and text side by side, Alternating direcitons */
+/* ============================= */
+.content-row {/* Set display, alignment, gap, and margin for content rows */
     display:flex;
     align-items: center;
     gap: 1.5rem ;
     margin-bottom: 1rem ;
 }
-.cause-row img {
+.content-row img {/* Set width, maximum width, border radius, and object fit for images in content rows */
     width: 40%;
     max-width: 350px;
     border-radius: 4px;
     object-fit: cover;
 }
-.cause-row p{
+.content-row p{/* Set flex property for paragraphs in content rows */
     flex: 1;
 }
-.cause-row.reverse{
-    flex-direction: row reverse;
+.content-row.reverse{/* Set flex direction to row reverse for reversed content rows */
+    flex-direction: row-reverse;
 }
-.sub-heading{
+.sub-heading{/* Set text alignment, background color, padding, margin, and border radius for sub-headings */
     text-align: center;
     background-color:#558197;
     padding: 0.5rem 1rem;
     margin: 0.5rem 0 1.5rem 0;
     border-radius: 2px;
 }
-@media (max-width: 600px) {
-  .cause-row,
-  .cause-row.reverse {
-    flex-direction: column;
-  }
-  .cause-row img {
-    width: 100%;
-  }
-}
 
-
-/* images */ /* Set maximum width, height, display, and margin for images */
+/* ============================= */
+/*Images*/
+/* ============================= */
 img {
     max-width: 100%;
     height: auto;
@@ -161,14 +162,22 @@ section img {
     border-radius: 6px;
     margin-top: 15px;
 }
-/* footer */ /* Set background color, text color, text alignment, and padding for the footer */
+
+
+/* ============================= */
+/*footer */
+/* ============================= */
 footer {
     background-color: #1e3a5f;
     color: white;
     text-align: center;
     padding: 20px 0;
 }
-/*buttons */ /* Set background color, text color, border, padding, cursor, and border radius for buttons */
+
+
+/* ============================= */
+/*button*/
+/* ============================= */
 button {
     background-color: #1e3a5f;
     color: white;
@@ -180,4 +189,31 @@ button {
 /*hover effect for buttons */ /* Set background color for buttons on hover */
 button:hover {
     background-color: #16304d;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 8px 0;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .content-row,
+    .content-row.reverse {
+        flex-direction: column;
+    }
+
+    .content-row img {
+        width: 100%;
+    }
 }
