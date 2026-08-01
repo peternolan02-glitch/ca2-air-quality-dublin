@@ -22,10 +22,35 @@
       </ul> <!-- End list seciton --> 
     </nav> <!-- end nav seciton -->
   </header>
+  <div class="container"> <!-- wrapper for main content -->
+    <main>
+      <section id="calculator"> <!-- open calculator section -->
+        <h2>Estimate Your Daily Commute Emissions</h2>
+        <p>
+          Enter your one-way commute distance and select your usual transport mode to estimate 
+          how much CO2 your daily commute produces. This calculator uses average emission factors 
+          per kilometre for common transport types in Dublin.
+        </p>
 
-  <main> <!-- open main -->
-    <p>content for this page.</p> <!-- paragraph 1 abstract (holder for now) --> 
-  </main>
+        <label for="distance">Distance (km):</label> <!-- Input field for distance in km displayed as distance (km) -->
+        <input type="number" id="distance" placeholder="e.g. 10"> <!-- distamce with example  e.g. 10 -->
+
+        <label for="transport">Transport Mode:</label> <!-- Input field for transport mode displayed as transport mode -->
+        <select id="transport"> <!-- dropdown menu for transport options -->
+          <option value="0.21">Car (petrol)</option> <!-- option for car petrol with value 0.21 -->
+          <option value="0.17">Car (diesel)</option> <!-- option for car diesel with value 0.17 -->
+          <option value="0.10">Bus</option> <!-- option for bus with value 0.10 -->
+          <option value="0.04">Train / DART</option> <!-- option for train/DART with value 0.04 -->
+          <option value="0">Bike / Walk</option> <!-- option for bike/walk with value 0 -->
+        </select>
+
+        <button type="button" onclick="calculateEmissions()">Calculate</button> <!-- button to calculate emissions links to js function calculateEmissions() -->
+
+        <p id="result"></p> <!-- paragraph to display result of calculation -->
+        <p id="error" class="error-text"></p> <!-- paragraph to display error message if input is invalid -->
+      </section>
+    </main>
+  </div>
 
   <footer> <!-- Open footer -->
     <p>&copy; 2026 Air Quality in Dublin Project</p> <!-- Small footer section -->
