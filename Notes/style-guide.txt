@@ -1,0 +1,33 @@
+Style.css breakdown for ease of use
+reset- all elements- removes the default spacinging for html 5
+Body- Global font,background,text color for all secitons in Body
+Container page width/centering wrapper
+Header- top banner +h1 title
+navigaiton - Nav links, Hover states for buttons
+Main + secton - Content blocks,heading, paragraphs,lists inside secitons
+Card grid - homepage "explore" cards (grid layout)
+content rows or subheadings - Flex images/ text rows alternating direcitons,colored heading bars
+Images - a global image styling rule
+Footer Bottom banner
+Buttons calcluator/form buttons and hover 
+Responsive - mobile friendly secitons for the website and images etc
+embedded video-youtube iframe sizing
+Feedback form - google images from iframe centering/sizing
+
+COLOURS
+Primary dark blue (header/footer/button)	#1e3a5f
+Darker blue (nav bg, button hover)	#16304d
+Card blue	#6ca4e5
+Sub-heading blue-grey	#558197
+Nav link hover	#bde0fe
+Body text	#222
+Shadow	rgba(0,0,0,0.1)
+
+TYPOGRAPHY
+Font: Arial, Helvetica, sans-serif — never overridden per-section
+Line-height: 1.6 set once on body, inherited everywhere
+Nav links: always font-weight: bold, text-decoration: none
+
+EXTRAS 
+Flex used for: content-row (image+text), feedback form centering
+flex rows and columsn stack on top of eachother in mobile
