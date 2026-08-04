@@ -150,6 +150,13 @@ section ul li {/* Set margin for list items in unordered lists */
     box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
 }
 
+.graph-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 /* ============================= */
 /*Peter Nolan - Images*/
 /* ============================= */
@@ -267,7 +274,7 @@ button:hover {
 .source{
     font-family: Arial, Helvetica, sans-serif; /*sets the font to be used;*/
     font-size: 0.8rem; /*set font size */
-    color: :#222; /*set colour black;*/
+    color: #222; /*set colour black;*/
     font-style: italic; /*make font italic */
     margin-top: 1rem; /*make small marging at top of text */
     text-align: center;/*put source text in center */
