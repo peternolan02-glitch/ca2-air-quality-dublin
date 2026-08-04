@@ -225,6 +225,7 @@ button:hover {
         width: 100%;
         height: 400px;
     }
+    
 }
 
 /* ============================= */
@@ -254,8 +255,18 @@ button:hover {
     text-align: center;
 }
 #feedback-iframe iframe{ /* set the dimensions and borfder of the i frame */
-    width: 100%;
+    width: 100%; 
     max-width: 800px;
     height: 600px;
     border-radius: 8px;
+}
+
+/*peter nolan - image source text*/
+.source{
+    font-family: Arial, Helvetica, sans-serif; /*sets the font to be used;*/
+    font-size: 0.8rem; /*set font size */
+    color: :#222; /*set colour black;*/
+    font-style: italic; /*make font italic */
+    margin-top: 1rem; /*make small marging at top of text */
+    text-align: center;/*put source text in center */
 }

@@ -13,6 +13,7 @@ Buttons calcluator/form buttons and hover
 Responsive - mobile friendly secitons for the website and images etc
 embedded video-youtube iframe sizing
 Feedback form - google images from iframe centering/sizing
+sources - styling for source under images (italic,font family colour etc)
 
 COLOURS
 Primary dark blue (header/footer/button)	#1e3a5f
