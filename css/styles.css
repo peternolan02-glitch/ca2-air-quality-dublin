@@ -147,6 +147,7 @@ section ul li {/* Set margin for list items in unordered lists */
     padding: 0.5rem 1rem;
     margin: 0.5rem 0 1.5rem 0;
     border-radius: 2px;
+    box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
 }
 
 /* ============================= */
@@ -237,6 +238,10 @@ button:hover {
         display: block;
         margin: 1rem auto; /* center the video frame */
 
+}
+#video{
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
 /* ============================= */
