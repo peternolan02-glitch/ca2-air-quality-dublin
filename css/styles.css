@@ -238,7 +238,7 @@ button:hover {
 /* ============================= */
 /*Peter Nolan - Imbedded video*/
 /* ============================= */
-#video frame { /* set dimensions and border radius for the embedded video frame */
+#video iframe { /* set dimensions and border radius for the embedded video frame */
         width: 100%;
         max-width: 560px;
         height: auto;
