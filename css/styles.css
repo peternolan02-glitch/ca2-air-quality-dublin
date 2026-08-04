@@ -5,15 +5,15 @@
 { /* Reset margin, padding, and box-sizing for all elements */
     margin: 0;  
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* border box will include padding*/
 }
 
 
 /* ============================= */
-/* Body */  
+/* Peter Nolan Body */  
 /* ============================= */
 body {/* Set font family, line height, background color, and text color for the body */
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; /*set the font family to be used */
     line-height: 1.6;
     background-color: white;
     color: #222;
@@ -21,7 +21,7 @@ body {/* Set font family, line height, background color, and text color for the 
 
 
 /* ============================= */
-/* Container */  
+/* Peter Nolan - Container */  
 /* ============================= */
 .container {/* Set width, maximum width, and center alignment for the container */
     width: 90%;
@@ -32,7 +32,7 @@ body {/* Set font family, line height, background color, and text color for the 
 
 
 /* ============================= */
-/*header*/
+/*Peter Nolanheader*/
 /* ============================= */
 header {/* Set background color, text color, and padding for the header */
     background-color: #1e3a5f;
@@ -46,7 +46,7 @@ header h1 { /* Set font size and text alignment for the header title */
 
 
 /* ============================= */
-/* Navigation */  
+/* Peter Nolan Navigation */  
 /* ============================= */
 nav { /* Set background color and padding for the navigation bar */
     background-color: #16304d;
@@ -70,7 +70,7 @@ nav ul li a:hover{ /* Set hover effect for navigation links */
 
 
 /* ============================= */
-/* Main Content + Sections */
+/* :Peter Nolan - Main Content + Sections */
 /* ============================= */
 main{/* Set padding for the main content area */
     padding: 30px 0;
@@ -150,7 +150,7 @@ section ul li {/* Set margin for list items in unordered lists */
 }
 
 /* ============================= */
-/*Images*/
+/*Peter Nolan - Images*/
 /* ============================= */
 img {
     max-width: 100%;
@@ -165,7 +165,7 @@ section img {
 
 
 /* ============================= */
-/*footer */
+/*Peter Nolan - footer */
 /* ============================= */
 footer {
     background-color: #1e3a5f;
@@ -176,7 +176,7 @@ footer {
 
 
 /* ============================= */
-/*button*/
+/*Peter Nolan - button*/
 /* ============================= */
 button {
     background-color: #1e3a5f;
@@ -192,7 +192,7 @@ button:hover {
 }
 
 /* ============================= */
-/* RESPONSIVE */
+/* Peter Nolan - RESPONSIVE */
 /* ============================= */
 @media (max-width: 600px) {
     nav ul li {
@@ -227,26 +227,30 @@ button:hover {
 }
 
 /* ============================= */
-/*Peter Nolan - Imbedded video responsive */
+/*Peter Nolan - Imbedded video*/
 /* ============================= */
-#video frame {
+#video frame { /* set dimensions and border radius for the embedded video frame */
         width: 100%;
         max-width: 560px;
         height: auto;
         aspect-ratio: 16/9;
         display: block;
-        margin: 1rem auto;
+        margin: 1rem auto; /* center the video frame */
 
 }
 
 /* ============================= */
-/*Peter Nolan - Feedback*/
+/*Peter Nolan - Feedback from*/
 /* ============================= */
-#feedback-iframe{
-    display: block;
-  margin: 1rem auto;
-  width: 100%;
-  max-width: 640px;
-  height: 800px;
-  border: none;
+#feedback-iframe{ /* set as flex container to center the iframe */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#feedback-iframe iframe{ /* set the dimensions and borfder of the i frame */
+    width: 100%;
+    max-width: 800px;
+    height: 600px;
+    border-radius: 8px;
 }
